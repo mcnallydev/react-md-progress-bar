@@ -40,7 +40,8 @@ var ProgressBar = function (_Component) {
 
     _this.state = {
       show: props.show,
-      overlay: props.overlay || false
+      overlay: props.overlay || false,
+      color: props.color
     };
     return _this;
   }
@@ -56,7 +57,8 @@ var ProgressBar = function (_Component) {
     value: function componentWillReceiveProps(nextProps) {
       this.setState({
         show: nextProps.show,
-        overlay: nextProps.overlay || false
+        overlay: nextProps.overlay || false,
+        color: nextProps.color
       });
     }
 
@@ -69,7 +71,7 @@ var ProgressBar = function (_Component) {
     key: 'renderProgressBar',
     value: function renderProgressBar() {
       if (this.state.show) {
-        return _react2.default.createElement(_line.Line, null);
+        return _react2.default.createElement(_line.Line, { color: this.state.color });
       } else {
         return null;
       }
@@ -118,7 +120,16 @@ var ProgressBar = function (_Component) {
 
 ProgressBar.propTypes = {
   show: _propTypes2.default.bool,
-  overlay: _propTypes2.default.bool
+  overlay: _propTypes2.default.bool,
+  color: _propTypes2.default.string
+};
+
+/**
+ * Default props
+ * @type {{color: string}}
+ */
+ProgressBar.defaultProps = {
+  color: "#F2F2F2"
 };
 
 exports.default = ProgressBar;
