@@ -12,7 +12,7 @@ React Component Material Design Progress Bar.
 ```javascript
 import ProgressBar from 'react-md-progress-bar';
 
-<ProgressBar show={true} overlay={true} />
+<ProgressBar show={true} overlay={true} color={"#FF6384"} />
 ```
 
 ## Props
