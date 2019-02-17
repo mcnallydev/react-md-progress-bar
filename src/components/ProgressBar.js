@@ -13,7 +13,8 @@ class ProgressBar extends Component {
     this.state = {
       show: props.show,
       overlay: props.overlay || false,
-      color: props.color
+      color: props.color,
+      backgroundColor: props.backgroundColor
     }
   }
 
@@ -25,7 +26,8 @@ class ProgressBar extends Component {
     this.setState({
       show: nextProps.show,
       overlay: nextProps.overlay || false,
-      color: nextProps.color
+      color: nextProps.color,
+      backgroundColor: nextProps.backgroundColor
     });
   }
 
@@ -36,7 +38,7 @@ class ProgressBar extends Component {
   renderProgressBar() {
     if (this.state.show) {
       return (
-        <Line color={this.state.color} />
+        <Line color={this.state.color} backgroundColor={this.state.backgroundColor} />
       );
     } else {
       return (null);
@@ -78,7 +80,8 @@ class ProgressBar extends Component {
 ProgressBar.propTypes = {
   show: PropTypes.bool,
   overlay: PropTypes.bool,
-  color: PropTypes.string
+  color: PropTypes.string,
+  backgroundColor: PropTypes.string
 };
 
 /**
@@ -86,7 +89,8 @@ ProgressBar.propTypes = {
  * @type {{color: string}}
  */
 ProgressBar.defaultProps ={
-  color: "#F2F2F2"
+    backgroundColor: "#F2F2F2",
+    color: "#ff9800"
 };
 
 export default ProgressBar;

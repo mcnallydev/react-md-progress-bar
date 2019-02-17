@@ -22,3 +22,4 @@ Name | Description | Default/Required | Type
 show | Show or hide ProgressBar. | required | bool
 overlay | Show or hide overlay. | optional | bool
 color | The color of the progress bar. | optional | string
+backgroundColor | Background color of the progress bar. | optional | string
