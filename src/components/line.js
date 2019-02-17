@@ -13,10 +13,10 @@ const runningProgressBar = keyframes`
     margin-left: 100%;
     margin-right: 0;
   }
-`
+`;
 
 export const Line = styled.div`
-  background-color: #F2F2F2;
+  background-color: ${props => props.backgroundColor};
   display: flex;
   position: relative;
   top: 0;
@@ -30,8 +30,8 @@ export const Line = styled.div`
     height: 4px;
     width: 100%;
     margin: 0;
-    background-color: #ff9800;
+    background-color: ${props => props.color};
     content: '';
     animation: ${runningProgressBar} 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
-`
+`;

@@ -1,10 +1,10 @@
 {
-  "name": "react-md-progress-bar",
-  "version": "0.0.2",
-  "description": "React Component Material Design Progress bar",
+  "name": "react-md-progress",
+  "version": "0.0.3",
+  "description": "React Customizable Material Design Progress bar. This library is a fork of Paulo McNally's react-md-progress-bar. See https://github.com/mcnallydev/react-md-progress-bar",
   "main": "index.js",
-  "repository": "https://github.com/mcnallydev/react-md-progress-bar.git",
-  "author": "Paulo McNally <paulomcnally@gmail.com>",
+  "repository": "https://github.com/Euler-KB/react-md-progress-bar.git",
+  "author": "Kofi Boahene <euler-kb@live.com>",
   "license": "MIT",
   "files": [
     "dist"
