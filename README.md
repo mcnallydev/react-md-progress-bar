@@ -1,4 +1,4 @@
-# react-md-progress-bar
+# react-md-progress
 React Component Material Design Progress Bar.
 
 ## Preview
@@ -6,11 +6,11 @@ React Component Material Design Progress Bar.
 
 ## Installation
 
-    $ yarn add react-md-progress-bar
+    $ yarn add react-md-progress
 
 ## Example
 ```javascript
-import ProgressBar from 'react-md-progress-bar';
+import ProgressBar from 'react-md-progress';
 
 <ProgressBar show={true} overlay={true} color={"#FF6384"} />
 ```
